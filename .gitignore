@@ -1,0 +1,42 @@
+# Terraform files
+
+*.tfstate
+*.tfstate.*
+*.tfplan
+.terraform/
+.terraform.lock.hcl
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Java files
+*.class
+*.jar
+*.war
+*.ear
+build/
+target/
+*.log
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Node modules (if applicable)
+node_modules/
+
+# Environment files
+.env
+.env.local
