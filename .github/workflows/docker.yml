@@ -21,7 +21,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker Image
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/javaimage:latest .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/javaimage:latest ./simple-web-app
 
       - name: Push Docker Image
         run: docker push ${{ secrets.DOCKER_USERNAME }}/javaimage:latest
